@@ -1,0 +1,134 @@
+$white: #f8f8f8;
+$red1: #fe4880;
+$blue1: #07689f;
+$blue2: #40a8c4;
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.login {
+  // border: 5px solid red;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(224, 210, 210);
+  .login-form {
+    margin: 30px 0px;
+    padding: 0px 15px;
+    height: 90vh;
+    width: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(162, 163, 162);
+    border: 5px solid red;
+    // border: 1px solid $blue2;
+    border-radius: 20px;
+    p {
+      color: red;
+    }
+    h1 {
+      text-align: center;
+      display: block;
+      width: 100%;
+      height: 50px;
+      margin-top: 30px;
+      font-size: 2.5rem;
+      color: $white;
+      &:hover {
+        color: $blue2;
+      }
+    }
+    form {
+      display: block;
+      position: relative;
+      padding: 10px 0px 10px 15px;
+      width: 450px;
+      font-size: 1.4rem;
+      margin-top: 0px;
+      margin-bottom: 100%;
+      border: 5px solid yellow;
+      hr {
+        width: 80%;
+        display: block;
+      }
+      .google-login {
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+      }
+      input {
+        // display: inline-block;
+        padding: 5px 25px;
+        border-radius: 10px;
+        background-color: black !important;
+        color: white;
+        width: 350px;
+        height: 30px;
+        transition: 0.4s;
+        &:focus {
+          background-color: black !important;
+          border-radius: 10px;
+        }
+        &:active {
+          background-color: black;
+          color: white;
+        }
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        transition: 0.3s;
+        color: $white;
+        &:hover {
+          color: $blue2;
+        }
+      }
+    }
+    .button-login {
+      padding: 0px 25px 0px 0px;
+      margin-top: 30px;
+      button[type="submit"] {
+        display: inline-block;
+        // position: relative;
+        background-color: $blue1;
+        border: none;
+        color: black;
+        padding: 10px 25px;
+        margin: 4px 0px;
+        cursor: pointer;
+        border-radius: 25px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 1rem;
+        &:hover {
+          background-color: #1b7eb8;
+          color: black;
+        }
+      }
+      button[type="button"] {
+        display: inline-block;
+        background-color: black;
+        border: 2px solid $blue2;
+        color: yellow;
+        padding: 10px 25px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 1rem;
+        &:hover {
+          background-color: #052630;
+        }
+      }
+    }
+  }
+}

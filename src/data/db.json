@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "",
+      "email": "",
+      "password": "",
+      "date-birth": ""
+    },
+    {
+      "name": "agus",
+      "email": "agus@yahoo.com",
+      "password": "123",
+      "date": "1998-12-13",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "status": ""
+    }
+  ]
+}

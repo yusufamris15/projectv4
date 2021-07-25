@@ -1,0 +1,114 @@
+$blue1: #07689f;
+$blue2: #40a8c4;
+$yellow: #ffc93c;
+$black: black;
+
+* {
+  font-family: Overlock;
+}
+
+// punya signup
+// body {
+//   background-color: black;
+//   color: white;
+// }
+
+// .signup {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: nowrap;
+//   justify-content: center;
+// }
+// .signup h1 {
+//   text-align: center;
+// }
+
+// .signup-form {
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: nowrap;
+//   justify-content: center;
+//   border: 1px solid white;
+// }
+// batas punya signup
+
+body {
+  background-color: $black;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100vh;
+  width: 100%;
+  // border: 5px solid red;
+  .left-container {
+    display: flex;
+    width: 55%;
+    height: 100%;
+    background-color: $blue1;
+    justify-content: center;
+    align-items: center;
+    // background-image: url("../logo.png");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  .right-container {
+    color: $yellow;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    background-color: $black;
+    padding-left: 15px;
+    padding-right: 15px;
+    h1 {
+      display: relative;
+      margin-top: 20%;
+      font-weight: 600;
+      font-style: bold;
+      font-size: 4.5rem;
+    }
+    .button-login {
+      input[type="submit"] {
+        display: inline-block;
+        background-color: $blue1;
+        border: none;
+        color: $black;
+        padding: 20px 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+        width: 400px;
+        font-weight: 600;
+        font-size: 1rem;
+        &:hover {
+          background-color: #1b7eb8;
+          color: $black;
+        }
+      }
+      input[type="button"] {
+        display: inline-block;
+        background-color: $black;
+        border: 2px solid $blue2;
+        color: $yellow;
+        padding: 20px 32px;
+        margin: 10px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+        width: 400px;
+        font-weight: 600;
+        font-size: 1rem;
+        &:hover {
+          background-color: #052630;
+        }
+      }
+    }
+  }
+}

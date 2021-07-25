@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #A2D5F2;
+  // border: 3px solid red;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 400px;
+  height: 60px;
+  align-items: center;
+  // position: absolute;
+  h1 {
+    display: inline;
+  }
+  ul {
+    li {
+      list-style: none;
+      display: inline;
+      margin-left: 20px;
+    }
+  }
+}
